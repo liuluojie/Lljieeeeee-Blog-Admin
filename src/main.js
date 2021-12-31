@@ -16,6 +16,8 @@ router.afterEach(() => {
 });
 
 
+import "@/plugins/element-ui"
+
 new Vue({
   router,
   render: h => h(App)
