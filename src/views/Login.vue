@@ -67,7 +67,7 @@ export default {
               if (res.data.code == 200) {
                 console.log()
                 this.$message.success(res.data.message)
-                window.sessionStorage.setItem("Lljieeeeee-Token", res.data.data.token.tokenValue)
+                window.sessionStorage.setItem("Lljieeeeee-Token", res.data.data['Lljieeeeee-Token'])
                 this.$router.push('/')
               }else {
                 this.$message.error(res.data.message)

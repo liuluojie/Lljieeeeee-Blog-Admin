@@ -5,6 +5,11 @@ import Home from "@/views/Home";
 import Login from "@/views/Login";
 import Dashboard from "@/components/Dashboard";
 import Error404 from "@/components/Error404";
+import List from "@/views/article/List";
+import Write from "@/views/article/Write";
+import Edit from "@/views/article/Edit";
+import Tag from "@/views/article/Tag";
+import Category from "@/views/article/Category";
 Vue.use(VueRouter)
 
 const routes = [
@@ -31,6 +36,41 @@ const routes = [
           title: '仪表盘'
         }
       },
+      {
+        path: '/list',
+        component: List,
+        meta: {
+          title: '文章列表'
+        }
+      },
+      {
+        path: '/write',
+        component: Write,
+        meta: {
+          title: '写文章'
+        }
+      },
+      {
+        path: '/edit/:id',
+        component: Edit,
+        meta: {
+          title: '编辑文章'
+        }
+      },
+      {
+        path: '/category',
+        component: Category,
+        meta: {
+          title: '文章分类'
+        }
+      },
+      {
+        path: '/tag',
+        component: Tag,
+        meta: {
+          title: '文章标签'
+        }
+      }
     ]
   },
   {
