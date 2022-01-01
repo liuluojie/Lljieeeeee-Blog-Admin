@@ -7,6 +7,13 @@ export function getArticlePage(current, size) {
     })
 }
 
+export function getRecycleArticlePage(current, size) {
+    return request({
+        method: 'get',
+        url: `/article/getRecycleArticlePage/${current}/${size}`
+    })
+}
+
 export function getArticleById(id) {
     return request({
         method: 'get',
