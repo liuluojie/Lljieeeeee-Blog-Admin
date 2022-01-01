@@ -14,7 +14,13 @@ import {
   Submenu,
   Dropdown,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  Table,
+  TableColumn,
+  Card,
+  Tag,
+  Empty,
+  Switch, Pagination, Dialog, Upload, Select, Option, CheckboxGroup, Checkbox, Row, Col
 } from "element-ui";
 
 
@@ -32,4 +38,20 @@ Vue.use(Submenu)
 Vue.use(Dropdown)
 Vue.use(DropdownMenu)
 Vue.use(DropdownItem)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Card)
+Vue.use(Tag)
+Vue.use(Empty)
+Vue.use(Switch)
+Vue.use(Pagination)
+Vue.use(Dialog)
+Vue.use(Upload)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Row)
+Vue.use(Col)
+
 Vue.prototype.$message = Message

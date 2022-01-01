@@ -5,19 +5,19 @@
         <span><router-link to="/">个人博客管理系统</router-link></span>
         <div class="header-menu">
           <el-menu router default-active="dashboard" mode="horizontal">
-            <el-menu-item index="dashboard">
+            <el-menu-item index="/dashboard">
               <i class="fa fa-dashboard menu-icon"></i>
               仪表盘
             </el-menu-item>
-            <el-submenu index="article">
+            <el-submenu index="/article">
               <template slot="title">
                 <i class="fa fa-list menu-icon"></i>
                 文章
               </template>
-              <el-menu-item index="list">文章列表</el-menu-item>
-              <el-menu-item index="write">写文章</el-menu-item>
-              <el-menu-item index="category">分类</el-menu-item>
-              <el-menu-item index="tag">标签</el-menu-item>
+              <el-menu-item index="/list">文章列表</el-menu-item>
+              <el-menu-item index="/write">写文章</el-menu-item>
+              <el-menu-item index="/category">分类</el-menu-item>
+              <el-menu-item index="/tag">标签</el-menu-item>
             </el-submenu>
             <el-submenu index="comment">
               <template slot="title">

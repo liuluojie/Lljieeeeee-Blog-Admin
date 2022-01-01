@@ -13,3 +13,25 @@ export function getArticleById(id) {
         url: `/article/${id}`
     })
 }
+
+export function addArticle(article, articleCategoryList, articleTagList) {
+    return request({
+        method: 'post',
+        url: `/article`,
+        data: {article, articleCategoryList, articleTagList}
+    })
+}
+export function updateArticle(article, articleCategoryList, articleTagList) {
+    return request({
+        method: 'put',
+        url: `/article`,
+        data: {article, articleCategoryList, articleTagList}
+    })
+}
+
+export function updateArticleStatus(articleId, status) {
+    return request({
+        method: 'post',
+        url: `/article/${articleId}/${status}`
+    })
+}

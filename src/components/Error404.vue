@@ -1,6 +1,6 @@
 <template>
   <div>
-    404页面
+    <el-empty description="404"></el-empty>
   </div>
 </template>
 
