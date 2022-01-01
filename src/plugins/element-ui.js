@@ -20,7 +20,18 @@ import {
   Card,
   Tag,
   Empty,
-  Switch, Pagination, Dialog, Upload, Select, Option, CheckboxGroup, Checkbox, Row, Col
+  Switch,
+  Pagination,
+  Dialog,
+  Upload,
+  Select,
+  Option,
+  CheckboxGroup,
+  Checkbox,
+  Row,
+  Col,
+  Loading,
+  MessageBox
 } from "element-ui";
 
 
@@ -53,5 +64,6 @@ Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Row)
 Vue.use(Col)
-
+Vue.use(Loading)
 Vue.prototype.$message = Message
+Vue.prototype.$confirm  = MessageBox.confirm
